@@ -1,0 +1,16 @@
+.menu-panel{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 74px;
+    background-color: #1A2449;
+    padding: 14px 0 22px 0;
+}
+
+.menu-panel__menu-list-element a{
+    color: white;
+    text-decoration: none;
+}
+
+

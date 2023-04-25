@@ -1,0 +1,17 @@
+.top-panel {
+    display: grid;
+    padding-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-items: center;
+}
+
+.top-panel__logo-area{
+    grid-column: 3 / 4;
+}
+
+.top-panel__searchBar{
+    grid-column: 4 / 5;
+}
