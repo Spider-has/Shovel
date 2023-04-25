@@ -4,7 +4,7 @@ import "../../../fonts/fonts.css"
 interface button {
     id: string,
     name: string,
-    type: "reset" | "button" | "reset" | undefined,
+    type: "reset" | "button" | undefined,
     content: string,
     mod: "focused" | "disabled" | undefined
 }
@@ -12,11 +12,13 @@ interface button {
 const CustomButton = (props: button) => {
     return (
         <button
-            className={`${styles.button} ${styles.button}`}
+            className={`${styles.button}` }
             name={props.name}
             id={props.id}
             type={props.type}>
-            {props.content}
+            <span className={"usual-button-text"}>
+                {props.content}
+            </span>
         </button>
     )
 }

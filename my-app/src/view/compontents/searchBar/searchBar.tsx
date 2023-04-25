@@ -1,6 +1,6 @@
 import "../../../fonts/fonts.css"
 import "./searchBar.css"
-import searchBarIcon from "../../../images/magnifier_icon.svg"
+import searchBarIcon from "../icons/magnifier_icon.svg"
 
 interface searchBar{
 }
