@@ -6,7 +6,7 @@ import { CustomButton } from './view/compontents/button/button';
 import { button } from './interface/interface';
 import { Header} from './view/compontents/header/header'
 import {MenuPanel} from "./view/compontents/menuPanel/menuPanel";
-import {FirstParagraphArea} from "./view/compontents/mainPageContent/startParagraph/startParagraph"
+import {NewsArea} from "./view/compontents/mainPageContent/newsBlock/newsBlock";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div>
       <Header/>
       <MenuPanel/>
-      <FirstParagraphArea/>
+      <NewsArea/>
     </div>
   );
 }
