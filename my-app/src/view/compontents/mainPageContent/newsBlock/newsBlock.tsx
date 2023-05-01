@@ -4,19 +4,42 @@ import {ReactNode} from "react";
 import news_img1 from "../../../../images/news/news_img1.jpg"
 import news_img2 from "../../../../images/news/news_img2.jpg"
 import news_img3 from "../../../../images/news/news_img3.jpg"
+import {ArrowLeft, ArrowRight} from "../../icons/arrows";
 
 interface NewCard {
     id: string,
     heading: string,
     img: string,
     description: string,
+    status: "active" | "non-active"
+}
+
+const ArrowLeftArea = () => {
+    return(
+        <div className={""}>
+            <ArrowLeft/>
+        </div>
+    )
+}
+
+const ArrowRightArea = () => {
+    return(
+        <div className={""}>
+            <ArrowRight/>
+        </div>
+    )
 }
 
 
+
 const NewsCard = (props: NewCard) => {
+    let darkType: string = "";
+    if(props.status == "non-active"){
+        darkType = "new-card__area_type_dark";
+    }
     return(
         <div className={"new-card"}>
-            <div className={"new-card__area_type_dark"}>
+            <div className={darkType}>
             </div>
             <div className={"new-card__header"}>
                 <h4 className={""}>
@@ -47,35 +70,40 @@ const NewsCollection = () => {
             heading: "ААААААААААААААААААААА",
             img: news_img1,
             description: "ББББББББББББББББББББББББББББББББ",
+            status: "non-active",
         },
         {
             id: "1",
             heading: "Могильник X века",
             img: news_img1,
             description: "В Чувашии обнаружили уникальный могильник 10 века",
+            status: "active",
         },
         {
             id: "2",
             heading: "Кошелек из X века",
             img: news_img2,
             description: "В Чувашии обнаружили уникальный могильник 10 века",
+            status: "active",
         },
         {
             id: "3",
             heading: "Раскопки могильника в Моркинском р-не",
             img: news_img3,
             description: "В Чувашии обнаружили уникальный могильник 10 века",
+            status: "active",
         },
         {
             id: "4",
             heading: "Какой-то текст",
             img: news_img1,
             description: "Здесь очень интересный и нестандартный текст",
+            status: "non-active",
         }
     ];
-    let Cards: Array<ReactNode> = CardsCollection.map(({id, heading, img, description}) => {
+    let Cards: Array<ReactNode> = CardsCollection.map(({id, heading, img, description, status}) => {
         return(
-            <NewsCard id={id} heading={heading} img={img} description={description}/>
+            <NewsCard id={id} heading={heading} img={img} description={description} status={status}/>
         )
     });
     return(
@@ -95,6 +123,12 @@ const NewsArea = () => {
             </div>
             <div className = {"news__wrapper"}>
                 <NewsCollection/>
+            </div>
+            <div className = {"arrow-left"}>
+                <ArrowLeft/>
+            </div>
+            <div className = {"arrow-right"}>
+                <ArrowRight/>
             </div>
         </section>
     )
