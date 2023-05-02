@@ -1,8 +1,9 @@
-import usualMaskotPos from "../../../images/skelet/skelet1.jpg"
+import usualMaskotPos from "../../../images/skelet/skelet1.png"
 import "./hints.css"
 import "../../../fonts/fonts.css"
 interface textCloud {
-    content: string
+    content: string,
+    cloudType: string,
 }
 
 interface mascot {
@@ -13,7 +14,7 @@ interface mascot {
 const MascotsHint = (props: mascot) => {
     return(
         <div>
-            <img src ={usualMaskotPos}></img>
+            <img src = {usualMaskotPos}></img>
         </div>
     )
 }
@@ -21,7 +22,7 @@ const MascotsHint = (props: mascot) => {
 
 const MascotsHintCloud = (props: textCloud) => {
     return(
-        <div className = {"text-cloud"}>
+        <div className = {props.cloudType}>
             <span className={"usual-content-text"}>
                 {props.content}
             </span>

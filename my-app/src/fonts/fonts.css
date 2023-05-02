@@ -1,14 +1,21 @@
-.button-text{
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 29px;
-    line-height: 37px;
-}
-
 @font-face {
     font-family: 'Tovari Sans';
     src: url("./Tovari Sans.ttf");
+}
+
+.usual-button-text{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+.usual-button-text_s{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .usual-content-text{
@@ -19,11 +26,53 @@
     line-height: 25px;
 }
 
+.usual-header-text{
+    font-family: 'Tovari Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 51px;
+}
+
+.record-nums-text{
+    font-family: 'Tovari Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 151px;
+}
+
+.usual-header-text-l{
+    font-family: 'Tovari Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 91px;
+    line-height: 80px;
+}
+
+.usual-post-header{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+
+}
+
+.usual-post-content{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26.6667px;
+    line-height: 33px;
+}
+
 .usual-content-text_m{
     font-family: 'Mulish', sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 25px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
 }
+
 

@@ -21,10 +21,10 @@ const MascotHintArea = () => {
                 <MascotsHint/>
             </div>
             <div className={"start-paragraph-hint-area__text-cloud-area"}>
-                <MascotsHintCloud content={paragraphContent}/>
+                <MascotsHintCloud content={paragraphContent} cloudType={"text-cloud"}/>
             </div>
             <div className={"start-paragraph-hint-area__button-area"}>
-                <CustomButton id={"signUpButton"} name={"signUp"} type={"button"} content={"Записаться на раскопки"} mod={undefined}/>
+                <CustomButton id={"signUpButton"} name={"signUp"} type={"button"} content={"Записаться на раскопки"} mod={undefined} contentClass={"usual-button-text"}/>
             </div>
         </div>
     )

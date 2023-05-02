@@ -1,8 +1,9 @@
 .button{
+    text-decoration: none;
     background-color: #01AC4D;
     color: #FFFFFF;
     text-align: center;
-    padding: 20px 33px 20px 33px;
+    padding: 27px 45px 27px 45px;
     border-radius: 66px;
     border: none;
     width: auto;
@@ -11,5 +12,13 @@
 
 .button_focused{
     background-color: #2001ac;
+}
+
+.button_light{
+    padding: 20px 62.5px;
+    color: #19213D;
+    background-color: #FFFFFF;
+    border: 1px solid #19213D;
+    border-radius: 67px;
 }
   

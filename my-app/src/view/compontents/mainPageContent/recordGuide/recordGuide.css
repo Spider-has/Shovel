@@ -1,0 +1,23 @@
+.record-guide-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.record-guide-header__header-wrapper__start-text{
+    width: 300px;
+}
+.record-guide-header__content{
+    margin: 0;
+}
+
+.record-guide-header__header-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.record-guide-header__end-text{
+    padding-left: 24px;
+    padding-bottom: 25px;
+}

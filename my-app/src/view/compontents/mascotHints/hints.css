@@ -9,3 +9,11 @@
     align-items: center;
     height: 100%;
 }
+
+.text-cloud_size_s{
+    padding: 45px 60px 43px 51px;
+}
+
+.mascot-hint{
+    background-color: rgba(0, 0, 0, 0);
+}
