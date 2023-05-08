@@ -1,10 +1,19 @@
 import "./recordGuide.css"
 import "../../../../fonts/fonts.css"
-import stage1Img from "../../../../images/pageImages/mainPage/recordGuideImg1.jpg"
-import stage2Img from "../../../../images/pageImages/mainPage/recordGuideImg2.jpg"
-import stage3Img from "../../../../images/pageImages/mainPage/recordGuideImg3.jpg"
+import stage1Img from "../../../../images/pageImages/mainPage/recordGuideImg1.png"
+import stage2Img from "../../../../images/pageImages/mainPage/recordGuideImg2.png"
+import stage3Img from "../../../../images/pageImages/mainPage/recordGuideImg3.png"
 import {ReactNode} from "react";
+import {MascotsHint} from "../../mascotHints/hints";
 
+
+const RegistrationForm = () => {
+    return(
+        <div>
+
+        </div>
+    )
+}
 
 const Header = () => {
     return(
@@ -104,6 +113,10 @@ const RecordGuideArea = () => {
         <section className={"guides-area"}>
             <Header/>
             <RecordGuides guides={guide.guides}/>
+            <div className={"guides-mascot"}>
+                <MascotsHint reverse={true}/>
+            </div>
+
         </section>
     )
 }

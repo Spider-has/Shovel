@@ -12,6 +12,7 @@
     margin: 0;
 }
 
+
 .record-guide-header__header-wrapper{
     display: flex;
     flex-direction: row;
@@ -30,22 +31,25 @@
     width: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .guide{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 148px;
+    gap: 173px;
     color: white;
+    flex-wrap: wrap;
 }
 
 .guide__guide-text-wrapper{
     display: flex;
     flex-direction: row;
-    height: auto;
     width: auto;
+    height: auto;
     gap: 15px;
+    padding-bottom: 27px;
 }
 
 .guide-header-index{
@@ -57,7 +61,7 @@
     flex-direction: column;
     gap: 31px;
     padding-top: 50px;
-    width: 520px;
+    width: 500px;
 }
 
 .guide-heading{
@@ -66,5 +70,14 @@
 .guides-box{
     display: flex;
     flex-direction: column;
-    gap: 71px;
+    gap: 90px;
+    padding-top: 4px;
+}
+
+.guides-mascot{
+    position: absolute;
+    right: 11.8%;
+    top: 415px;
+    width: 186px;
+    height: 268px;
 }

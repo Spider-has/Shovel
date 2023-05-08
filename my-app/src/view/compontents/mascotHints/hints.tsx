@@ -1,4 +1,4 @@
-import usualMaskotPos from "../../../images/skelet/skelet1.png"
+import usualMascotPos from "../../../images/skelet/skelet1.svg"
 import "./hints.css"
 import "../../../fonts/fonts.css"
 interface textCloud {
@@ -7,14 +7,18 @@ interface textCloud {
 }
 
 interface mascot {
-
+    reverse?: boolean,
 }
 
 
 const MascotsHint = (props: mascot) => {
+    let reverseCheck: string = "";
+    if (props.reverse){
+        reverseCheck = "mascot-hint_reverse";
+    }
     return(
-        <div>
-            <img src = {usualMaskotPos}></img>
+        <div className={"mascot-hint" }>
+            <img className={"mascot-hint " + reverseCheck} src = {usualMascotPos} alt = "mascot"></img>
         </div>
     )
 }
