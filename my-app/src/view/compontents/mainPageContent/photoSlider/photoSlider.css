@@ -1,0 +1,34 @@
+.slider-area{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background-color: rgba(217, 217, 217, 0.4);
+}
+
+.slider-area__arrow-area{
+    display: flex;
+    width: 109px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-area__arrow-area_left{
+    padding-right: 4%;
+    justify-content: flex-end;
+}
+
+.slider-area__arrow-area_right{
+    padding-left: 4%;
+}
+
+.slider-area__slider{
+    height: 100%;
+    width: auto;
+}
+
+.slider-img{
+    width: 100%;
+    display: block;
+}

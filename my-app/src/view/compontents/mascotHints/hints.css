@@ -1,17 +1,45 @@
 .text-cloud{
-    background-image: url("../../../images/skelet/message_cloud.svg");
     background-size: 100% 100%;
     background-position: left;
     background-repeat: no-repeat;
-    padding: 0px 60px;
+    padding: 0 60px;
     width: auto;
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.text-cloud_size_s{
-    padding: 45px 60px 43px 51px;
+.text-cloud_size_m{
+    background-image: url("../../../images/skelet/message_cloud.svg");
+}
+
+.text-cloud_size_sm{
+    background-image: url("../../../images/skelet/message_cloud_sm.svg");
+}
+
+.text-cloud_white_size_sm{
+    background-image: url("../../../images/skelet/message_cloud_white_sm.svg");
+}
+
+.text-cloud_white_size_extra_sm{
+    background-image: url("../../../images/skelet/message_cloud_white_extrasm.svg");
+}
+
+
+.text-cloud_type_start-paragraph{
+    padding: 0 88px 0 77px;
+}
+
+.text-cloud_type_form{
+    padding: 0 42px 0 47px;
+}
+
+.text-cloud_type_map{
+    padding: 0 60px 0 51px;
+}
+
+.text-cloud_type_footer{
+    padding: 0 56px;
 }
 
 .mascot-hint{
@@ -26,3 +54,8 @@
     width: 100%;
     height: 100%;
 }
+
+.text-cloud__central-text{
+    text-align: center;
+}
+

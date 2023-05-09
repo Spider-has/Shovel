@@ -1,17 +1,17 @@
-import {CustomButton, LinkedCustomButton} from "../../button/button";
-import "./newsBlock.css"
+import {CustomButton, LinkedCustomButton} from "./view/compontents/button/button";
+import "./slider-test.css"
 import {ReactNode, useState} from "react";
-import news_img1 from "../../../../images/news/news_img1.jpg"
-import news_img2 from "../../../../images/news/news_img2.jpg"
-import news_img3 from "../../../../images/news/news_img3.jpg"
-import {ArrowLeft, ArrowRight} from "../../icons/arrows";
+import news_img1 from "./images/news/news_img1.jpg"
+import news_img2 from "./images/news/news_img2.jpg"
+import news_img3 from "./images/news/news_img3.jpg"
+import {ArrowLeft, ArrowRight} from "./view/compontents/icons/arrows";
 
 interface NewCard {
     id: string,
-        heading: string,
-        img: string,
-        description: string,
-        status: string,
+    heading: string,
+    img: string,
+    description: string,
+    status: string,
 }
 const NewsCard = (props: NewCard) => {
     let darkType: string = "";
@@ -159,7 +159,7 @@ const NewsCollection = (props: newsCollection) => {
     )
 }
 
-const NewsArea = () => {
+const Slider = () => {
     const newsLength: number = 8;
     const [selectedNews, setSelectedNews] = useState(1);
     const newsShiftRight = (selectedNew: number, newsLength: number) => {
@@ -217,4 +217,4 @@ const NewsArea = () => {
     )
 }
 
-export {NewsArea}
+export {Slider}

@@ -6,6 +6,11 @@
 
 }
 
+.map-area{
+    display: flex;
+    justify-content: center;
+}
+
 .map-wrapper{
     display: flex;
     flex-direction: column;
@@ -15,7 +20,7 @@
 }
 
 .map-wrapper__header{
-    padding: 120px 0 0 202px;
+    padding: 120px 0 0 10.5%;
     width: 476px;
     color: #19213D;
 }
@@ -46,8 +51,7 @@
 }
 
 .map-area__img{
-    width: 1772px;
-    height: 1083px;
+    width: 100%;
 }
 
 

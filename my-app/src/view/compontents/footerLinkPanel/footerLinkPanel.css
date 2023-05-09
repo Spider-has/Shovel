@@ -1,0 +1,46 @@
+.footer-link-area {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-link-area__logo-place{
+    display: flex;
+    gap: 22px;
+}
+
+.support-logo-area{
+    display: flex;
+    gap: 9px;
+    color: white;
+}
+
+.footer-logo{
+    display: block;
+}
+
+.footer-link-area__contact-place{
+    display: flex;
+    gap: 32px;
+}
+
+.social-network-place{
+    display: flex;
+    gap: 25px;
+    padding-top: 9px;
+}
+
+.phone-place{
+    color: white;
+    padding-top: 12px
+}
+
+.support-text{
+    padding-top: 12px;
+}
+
+.support-logo{
+    padding-top: 17px;
+}

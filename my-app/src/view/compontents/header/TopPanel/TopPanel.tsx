@@ -9,7 +9,7 @@ const TopPanel = (props: TopPanel) => {
     return (
         <div className = {"top-panel"}>
             <div className = {"top-panel__logo-area"}>
-                <Logo/>
+                <Logo size={"logo_size_l"}/>
             </div>
             <div className = {"top-panel__searchBar"}>
                 <SearchBar/>

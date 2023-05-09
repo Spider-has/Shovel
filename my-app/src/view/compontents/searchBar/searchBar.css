@@ -3,12 +3,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 9px;
+    cursor: pointer;
+
 }
 
 .panel{
-    width: 100%;
-    padding: 5px 0 5px 30px;
-    vertical-align: center;
+    padding: 6px 0 6px 10px;
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 7px;
 }
 
 .searchBar__panel{
@@ -19,8 +22,4 @@
 .searchBar__icon{
     display: block;
     width: 50px;
-}
-
-.panel_icon-type{
-    background: #D9D9D9 url("../icons/magnifier_icon.svg") 5px no-repeat;
 }

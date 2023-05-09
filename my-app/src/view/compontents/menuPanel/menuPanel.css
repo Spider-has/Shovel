@@ -3,9 +3,12 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 74px;
+    gap: 100px;
     background-color: #1A2449;
     padding: 14px 0 22px 0;
+    position: sticky;
+    top: -1px;
+    z-index: 10;
 }
 
 .menu-panel__menu-list-element a{

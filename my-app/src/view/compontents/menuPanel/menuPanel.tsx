@@ -17,15 +17,13 @@ const MenuPanel = () => {
     menuPanelSuper.menuList.forEach((item) => {
         menu.push(
             <div className={"menu-panel__menu-list-element"}>
-                <a href = "./" className={"usual-content-text_m"}>{item}</a>
+                <a href = "./" className={"usual-menu-text"}>{item}</a>
             </div>
         )
     })
     return (
         <div className={"menu-panel"}>
-            {/*{ menuPanel = menuPanel.*/}
             {menu}
-            {/*}*/}
         </div>
     )
 }

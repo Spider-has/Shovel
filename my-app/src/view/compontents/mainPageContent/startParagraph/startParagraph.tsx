@@ -13,15 +13,14 @@ interface article{
 }
 
 const MascotHintArea = () => {
-    let paragraphContent: string = "Всем привет, мы - Лопата! \n" +
-        "Лопата - это сообщество людей, которым безумно нравится археология и раскопки. Мы хотим, чтобы люди узнали, насколько это улекательно и присоединились к нам!"
+    let paragraphContent: string = "Всем привет, мы - Лопата!  Лопата - это сообщество людей, которым безумно нравится археология и раскопки. Мы хотим, чтобы люди узнали, насколько это улекательно и присоединились к нам!"
     return(
         <div className={"start-paragraph-hint-area"}>
             <div className={"start-paragraph-hint-area__mascot-area"}>
                 <MascotsHint/>
             </div>
             <div className={"start-paragraph-hint-area__text-cloud-area"}>
-                <MascotsHintCloud content={paragraphContent} cloudType={"text-cloud"}/>
+                <MascotsHintCloud content={paragraphContent} cloudType={"text-cloud text-cloud_type_start-paragraph"} size={"standard"} textSize={"usual-hint-text_l"} cloudColor={"black"}/>
             </div>
             <div className={"start-paragraph-hint-area__button-area"}>
                 <CustomButton id={"signUpButton"} name={"signUp"} type={"button"} content={"Записаться на раскопки"} mod={undefined} contentClass={"usual-button-text"}/>
@@ -49,10 +48,10 @@ const ParagraphArticle = (props: article) => {
     return(
         <div className={`article ${articleClass}`}>
             <div className={"article__img"}>
-                <img className={"img"} src = {props.img}/>
+                <img className={"article-img"} src = {props.img}/>
             </div>
             <div className={"article-content"}>
-                <h3 className={"article-content__heading usual-article-heading"}>
+                <h3 className={"article-content__heading usual-header-text"}>
                     {props.heading}
                 </h3>
                 {paragraphs}

@@ -4,14 +4,38 @@ import stage1Img from "../../../../images/pageImages/mainPage/recordGuideImg1.pn
 import stage2Img from "../../../../images/pageImages/mainPage/recordGuideImg2.png"
 import stage3Img from "../../../../images/pageImages/mainPage/recordGuideImg3.png"
 import {ReactNode} from "react";
-import {MascotsHint} from "../../mascotHints/hints";
+import {MascotsHint, MascotsHintCloud} from "../../mascotHints/hints";
+import {Simulate} from "react-dom/test-utils";
+import click = Simulate.click;
 
 
 const RegistrationForm = () => {
+    let cloudMessage: string = "Вы можете оставить свою почту , чтобы, когда появится новая экспедциия, с вами могли связаться."
     return(
-        <div>
-
-        </div>
+        <article className={"form-area"}>
+            <div className={"form-area__form-area-heading"}>
+                <h3 className={"form-area-heading usual-header-text-sm"}>
+                    А если нет доступных экспедиций?
+                </h3>
+            </div>
+            <div className={"form-wrapper"}>
+                <div className={"form-wrapper__hint-area"}>
+                    <div className={"form-hint-area__skeleton"}>
+                        <MascotsHint/>
+                    </div>
+                    <div className={"form-hint-area__text-cloud"}>
+                        <MascotsHintCloud content={cloudMessage} cloudType={"text-cloud text-cloud_type_form"} size={"small"} textSize={"usual-hint-text_m"} cloudColor={"white"}/>
+                    </div>
+                </div>
+                <form className={"form"} action={""} method={""}>
+                    <div className={"form__input-field-wrapper"}>
+                        <input type = "text" className={"form__input"} placeholder={"Введите ваше имя"} required/>
+                        <input type = "email" className={"form__input"} placeholder={"Введите электронную почту"} required/>
+                    </div>
+                    <input type = "submit" className={"form__submit-button"} placeholder={"Подпишитесь"}/>
+                </form>
+            </div>
+        </article>
     )
 }
 
@@ -110,13 +134,15 @@ const RecordGuideArea = () => {
        ]
     };
     return(
-        <section className={"guides-area"}>
-            <Header/>
-            <RecordGuides guides={guide.guides}/>
-            <div className={"guides-mascot"}>
-                <MascotsHint reverse={true}/>
+        <section className={"record-and-guide"}>
+            <div className={"guides-area"}>
+                <Header/>
+                <RecordGuides guides={guide.guides}/>
+                <div className={"guides-mascot"}>
+                    <MascotsHint reverse={true}/>
+                </div>
+                <RegistrationForm/>
             </div>
-
         </section>
     )
 }
