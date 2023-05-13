@@ -8,6 +8,14 @@
     border: none;
     width: auto;
     height: auto;
+    /*transition: transform 1.5s ease-out 0.1s, color 1s ease-out 0.1s, background-color 1s ease-out 0.1s;*/
+}
+
+.button:hover{
+    transform: scale(1.1);
+    color: wheat;
+    background-color: black;
+    transition: all 0.1s linear;
 }
 
 .button_focused{

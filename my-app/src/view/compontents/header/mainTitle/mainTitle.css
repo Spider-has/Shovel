@@ -1,8 +1,17 @@
 .main-title{
-    width: auto;
+    width: 74%;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .main-title__img{
+    width: 100%;
+}
+
+.main-title__text{
+    position: absolute;
+    right: -80px;
+    bottom: 0px;
+    color: white;
 }
