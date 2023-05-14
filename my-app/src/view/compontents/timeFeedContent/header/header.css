@@ -7,6 +7,7 @@
     position: relative;
     padding: 62px 0 0 0 ;
     gap: 524px;
+    overflow: hidden;
     background: linear-gradient(171.13deg, #9CEAFF -5.48%, #B8DBF1 -5.47%, #93C8EA 93.07%);
 }
 
