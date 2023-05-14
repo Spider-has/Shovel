@@ -66,9 +66,30 @@ const ContentArea = () => {
     let articles: Array<ReactNode> = [];
     articles[0] = <ParagraphArticle imgPos={"left"} content={["Археология - это наука, которая изучает прошлое человечества через материальные следы, оставленные на земле. И экспедиция - один из способов изучения нашего прошлого."]}
                                     heading={"Что такое археология?"} img={ArticleImg1}/>
-    articles[1] = <ParagraphArticle imgPos={"right"} content={["Экспедиция начинается с тщательной подготовки места раскопки. Мы прибываем на место и оперативно устанавливаем лагерь.", "Команда делится на две группы: одни начинают аккуратно выкапывать землю в поисках новых артефактов, другие очищают и изучают уже найденные артефакты. \n" +
-    "В свободное время мы отдыхаем и общаемся.", "Под конец экспедиции проводится особое торжество - посвящение новичков в археологи. После этого мы собираем вещи и возвращаемся домой."]}
-                                    heading={"Как проходят экспедиции?"} img={ArticleImg2}/>
+    articles[1] =  <div className={"article_type_reverse article"}>
+        <div className={"article__img"}>
+            <img className={"article-img"} src = {ArticleImg2}/>
+        </div>
+        <div className={"article-content"}>
+            <h3 className={"article-content__heading usual-header-text"}>
+                Как проходят экспедиции?
+            </h3>
+            <p className={"article-content__paragraph usual-content-text"}>
+                Экспедиция начинается с тщательной подготовки места раскопки. Мы прибываем на место и оперативно устанавливаем лагерь.
+            </p>
+            <p className={"article-content__paragraph usual-content-text"}>
+                Команда делится на две группы: одни начинают аккуратно выкапывать землю в поисках новых артефактов, другие очищают и изучают уже найденные артефакты.
+                В свободное время мы отдыхаем и общаемся.
+            </p>
+            <p className={"article-content__paragraph usual-content-text"}>
+                Под конец экспедиции проводится особое торжество - посвящение новичков в археологи. После этого мы собираем вещи и возвращаемся домой.
+            </p>
+            <div className={"article__button"}>
+            <CustomButton id={"1"} name={""} type={"button"} content={"Узнать больше"} mod={undefined} contentClass={"usual-button-text_sm"}/>
+            </div>
+        </div>
+    </div>
+
     return(
         <div className={"content-area"}>
             {articles}

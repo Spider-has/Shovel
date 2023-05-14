@@ -25,16 +25,18 @@ const FooterLinkPanel = () => {
             <div className={"footer-link-area__contact-place"}>
                 <div className={"phone-place"}>
                         <span className={"usual-footer-content-text"}>
-                            по всем вопросам (8362) 765-456
+                            по всем вопросам 89914633504
                         </span>
                 </div>
                 <div className={"social-network-place"}>
                     <div className={"social-network-place__vk"}>
                         <img src = {Vk} alt = "Vk icon"/>
                     </div>
-                    <div className={"social-network-place__tg"}>
-                        <img src = {Telegram} alt = "Tg icon"/>
-                    </div>
+                    <a href = "https://t.me/arxlopata12">
+                        <div className={"social-network-place__tg"}>
+                            <img src = {Telegram} alt = "Tg icon"/>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

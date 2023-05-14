@@ -231,3 +231,9 @@
     display: flex;
     width: 200px;
 }
+.article__button{
+    display: flex;
+    padding-top: 4px;
+    justify-content: flex-end;
+}
+
