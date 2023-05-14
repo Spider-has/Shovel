@@ -1,9 +1,11 @@
 import {CustomButton, LinkedCustomButton} from "../../button/button";
 import "./newsBlock.css"
 import {ReactNode, useState} from "react";
-import news_img1 from "../../../../images/news/news_img1.jpg"
-import news_img2 from "../../../../images/news/news_img2.jpg"
-import news_img3 from "../../../../images/news/news_img3.jpg"
+import news_img1 from "../../../../images/news/news_img1.jpg";
+import news_img2 from "../../../../images/news/news_img2.jpg";
+import news_img3 from "../../../../images/news/news_img3.jpg";
+import news_img4 from "../../../../images/news/news_img_4.jpg";
+import news_img5 from "../../../../images/news/news_img_5.jpg";
 import {ArrowLeft, ArrowRight} from "../../icons/arrows";
 
 interface NewCard {
@@ -76,67 +78,39 @@ const NewsCollection = (props: newsCollection) => {
     let CardsCollection: Array<NewCard> = [
         {
             id: "0",
-            heading: "ААААААААААААААААААААА",
+            heading: "СЕНСАЦИОННЫЕ НАХОДКИ В НЕДРАХ МАРИЙ ЭЛ",
             img: news_img1,
-            description: "ББББББББББББББББББББББББББББББББ",
+            description: "Редко кому удавалось подержать в руках вещь, которой тысяча лет. Топор, в буквальном смысле покрытый налетом веков...",
             status: "non-active",
         },
         {
             id: "1",
             heading: "Могильник X века",
-            img: news_img1,
+            img: news_img2,
             description: "В Марий Эл завершились раскопки древнего могильника в Моркинском районе",
             status: "non-active",
         },
         {
             id: "2",
             heading: "Кошелек из X века",
-            img: news_img2,
+            img: news_img3,
             description: "В Чувашии обнаружили уникальный могильник 10 века",
             status: "non-active",
         },
         {
             id: "3",
             heading: "Раскопки могильника в Моркинском р-не",
-            img: news_img3,
+            img: news_img4,
             description: "В Марий Эл археологи нашли кошелек из бобрового хвоста, изготовленный в X веке.",
             status: "non-active",
         },
         {
             id: "4",
-            heading: "Какой-то текст",
-            img: news_img1,
-            description: "Здесь очень интересный и нестандартный текст",
+            heading: "В ГЛУБИНУ ВЕКОВ",
+            img: news_img5,
+            description: "Археологические находки Марий Эл представлены на выставке «В глубину веков…», где...",
             status: "non-active",
         },
-        {
-            id: "5",
-            heading: "ЗАГОЛОВОК №6",
-            img: news_img1,
-            description: "Здесь очень интересный и нестандартный текст",
-            status: "non-active",
-        },
-        {
-            id: "6",
-            heading: "ЗАГОЛОВОК №7",
-            img: news_img1,
-            description: "Здесь очень интересный и нестандартный текст",
-            status: "non-active",
-        },
-        {
-            id: "7",
-            heading: "ЗАГОЛОВОК №8",
-            img: news_img1,
-            description: "Здесь очень интересный и нестандартный текст",
-            status: "non-active",
-        },
-        {
-            id: "8",
-            heading: "ЗАГОЛОВОК №9",
-            img: news_img1,
-            description: "Здесь очень интересный и нестандартный текст",
-            status: "non-active",
-        }
     ];
     CardsCollection[selectedCards].status = "active";
     if (selectedCards + 1 > CardsCollection.length - 1){
@@ -160,7 +134,7 @@ const NewsCollection = (props: newsCollection) => {
 }
 
 const NewsArea = () => {
-    const newsLength: number = 8;
+    const newsLength: number = 4;
     const [selectedNews, setSelectedNews] = useState(1);
     const newsShiftRight = (selectedNew: number, newsLength: number) => {
         let nextNew: number = selectedNew;
@@ -190,7 +164,7 @@ const NewsArea = () => {
     }
 
     return(
-        <section className={"last-news"}>
+        <section id = "news-section" className={"last-news"}>
             <div className={"news__header"}>
                 <h3 className={"header__text usual-header-text"}>
                     Последние события

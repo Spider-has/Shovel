@@ -6,16 +6,25 @@
     padding: 27px 45px 27px 45px;
     border-radius: 66px;
     border: none;
-    width: auto;
     height: auto;
-    /*transition: transform 1.5s ease-out 0.1s, color 1s ease-out 0.1s, background-color 1s ease-out 0.1s;*/
+    transition: all 0.5s ease-out 0.1s;
 }
 
 .button:hover{
     transform: scale(1.1);
-    color: wheat;
+    transition: all 0.3s linear;
+}
+
+.button_full_light{
+    border: 3px solid #FFFFFF;
+    border-radius: 89px;
+    background-color: unset;
+}
+
+.button_full_light:hover{
+    color: white;
     background-color: black;
-    transition: all 0.1s linear;
+    border-color: black;
 }
 
 .button_focused{
@@ -28,5 +37,11 @@
     background-color: #FFFFFF;
     border: 1px solid #19213D;
     border-radius: 67px;
+}
+
+
+.button_light:hover{
+    color: white;
+    background-color: black;
 }
   

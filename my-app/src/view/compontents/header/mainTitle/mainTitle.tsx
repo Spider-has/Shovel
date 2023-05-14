@@ -1,4 +1,4 @@
-import mainTitleImg from "../../../../images/pageImages/mainPage/main_heading_video.gif"
+import mainTitleImg from "../../../../images/pageImages/mainPage/Mask-group_1.gif"
 import "./mainTitle.css"
 
 interface mainTitle{

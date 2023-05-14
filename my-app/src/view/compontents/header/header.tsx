@@ -2,7 +2,6 @@ import "../../../fonts/fonts.css"
 import {TopPanel} from './TopPanel/TopPanel';
 import {MainTitle} from "./mainTitle/mainTitle";
 import "./header.css"
-import {MenuPanel} from "../menuPanel/menuPanel";
 
 interface header{
 }

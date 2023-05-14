@@ -103,7 +103,32 @@ const RecordGuides = (props: stages) => {
                 </div>
             </article>
         )
-    })
+    });
+    guideStages[0] = <article className={"guide"}>
+        <div className={"guide__guide-text-wrapper"}>
+            <div className={"guide-header-index"}>
+                        <span className = {"record-nums-text"}>
+                             1
+                        </span>
+            </div>
+            <div className ={"guide-content-area"}>
+                <div>
+                    <h3 className={"guide-heading usual-header-text-sm"}>
+                        Создайте аккаунт
+                    </h3>
+                </div>
+                <div>
+                    <span className={"usual-content-text"}>
+                        Чтобы участвовать в экспедиции достаточно зарегистрироваться на площадке <a href={"https://dobro.ru"} className={"guide__link"}>добро.ру</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div className = {"guide__image"}>
+            <img src = {stage1Img} alt={"guide-stage " + "1"}/>
+        </div>
+    </article>
+
     return(
         <div className={"guides-box"}>
             {guideStages}
@@ -134,7 +159,7 @@ const RecordGuideArea = () => {
        ]
     };
     return(
-        <section className={"record-and-guide"}>
+        <section id = "recordguide" className={"record-and-guide"}>
             <div className={"guides-area"}>
                 <Header/>
                 <RecordGuides guides={guide.guides}/>

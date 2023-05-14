@@ -12,6 +12,11 @@
     background-color: #19213D;
 }
 
+.guide__link{
+    text-decoration:  underline #FFFFFF;
+    color: white;
+}
+
 .record-guide-header__header-wrapper__start-text{
     width: 300px;
 }

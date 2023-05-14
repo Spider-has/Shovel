@@ -23,7 +23,9 @@ const MascotHintArea = () => {
                 <MascotsHintCloud content={paragraphContent} cloudType={"text-cloud text-cloud_type_start-paragraph"} size={"standard"} textSize={"usual-hint-text_l"} cloudColor={"black"}/>
             </div>
             <div className={"start-paragraph-hint-area__button-area"}>
+                <a href = "#recordguide">
                 <CustomButton id={"signUpButton"} name={"signUp"} type={"button"} content={"Записаться на раскопки"} mod={undefined} contentClass={"usual-button-text"}/>
+                </a>
             </div>
         </div>
     )

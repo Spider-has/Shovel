@@ -1,0 +1,11 @@
+.time-feed-footer-area{
+    display: flex;
+    width: 100%;
+    background-color: #19213D;
+    padding: 15px 0 26px 0;
+    justify-content: center;
+}
+
+.time-feed-page-wrapper{
+    background-color: #19213D;
+}
